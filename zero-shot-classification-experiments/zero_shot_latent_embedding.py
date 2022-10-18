@@ -11,7 +11,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics import multilabel_confusion_matrix, precision_recall_fscore_support
 
 
-def run_zero_shot_latent_w2v(df, candidate_labels, candidate_label_embeddings, sbert_model, transfer_matrix, experiment_name, run_name, experiment_dir):
+def run_zero_shot_latent_emb(df, candidate_labels, candidate_label_embeddings, sbert_model, transfer_matrix, experiment_name, run_name, experiment_dir):
 
     mlflow.set_tracking_uri(experiment_dir)
     experiment_active = mlflow.set_experiment(experiment_name)
