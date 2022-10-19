@@ -97,6 +97,13 @@ The following dependencies are required to run the notebooks and scripts on your
     pip install fasttext
     `
     
+ 
+  - [Gensim 4.2.0](https://radimrehurek.com/gensim/)
+
+    `
+    pip install gensim
+    `
+    
     
  - [Numpy 1.22.4](https://numpy.org/)
 
