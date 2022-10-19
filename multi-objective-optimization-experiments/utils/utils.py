@@ -47,7 +47,7 @@ def get_test_data_info(test_cases):
         
 
 def build_feature_mapping():
-    # Build mapping (from Snowflake data terminology to testing terminology)
+    # Build mapping (from Snowflake data to testing data)
     mapping_file = open('PATH_OF_FILE_WITH_FEATURE_NAMES_SNOWFLAKE_TEST_CASES')
     mapping_dict = {}
     
