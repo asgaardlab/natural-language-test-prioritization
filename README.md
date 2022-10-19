@@ -16,7 +16,7 @@ Our approach was applied and evaluated with the data of the *Prodigy Math game* 
 
 **(2) Multi-objective optimization to prioritize the execution of test cases**: we performed two main experiments with the NSGA-II genetic algorithm to find optimal test case execution orderings:
 
-* Without feature usage: our objectives functions are *number of covered features* (maximize) and *test execution time* (minimize)
+* Without feature usage: our objectives functions are *number of covered game features* (maximize) and *test execution time* (minimize)
 * With feature usage: our objectives functions are *number of covered highly-used game features* (maximize) and *test execution time* (minimize)
 
 
