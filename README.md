@@ -8,13 +8,13 @@ This repository contains the source code of the experiments that we performed fo
 
 Our approach was applied and evaluated with the data of the *Prodigy Math game* from our industry partner [Prodigy Education](https://www.prodigygame.com/main-en/). Our approach consists of two main steps: (1) automatic identification of the game feature(s) that are covered in manual test cases described in natural language and (2) prioritization of test cases based on the game features that are highly-used by players.
 
-**(1) Zero-shot classification**: we used three techniques/models with strong zero-shot classification capabilities and different combinations (ensembles) of those techniques/models:
+**(1) Zero-shot classification**: we used three techniques/models with strong zero-shot classification capabilities and different combinations (ensembles) of those techniques/models to automatically identify the covered game features from the textual description of test cases:
 
 * BartLargeMNLI - [facebook/bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli)
 * CrossEncoderNLI - [cross-encoder/nli-distilroberta-base](https://huggingface.co/cross-encoder/nli-distilroberta-base)
 * LatentEmb - [latent-embeddings](https://joeddav.github.io/blog/2020/05/29/ZSL.html)
 
-**(2) Multi-objective optimization for prioritization of test execution**: we performed two main experiments with the NSGA-II genetic algorithm:
+**(2) Multi-objective optimization to prioritize the execution of test cases**: we performed two main experiments with the NSGA-II genetic algorithm to find optimal test case execution orderings:
 
 * Without feature usage: our objectives functions are *number of covered features* (maximize) and *test execution time* (minimize)
 * With feature usage: our objectives functions are *number of covered highly-used game features* (maximize) and *test execution time* (minimize)
